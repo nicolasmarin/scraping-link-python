@@ -15,7 +15,14 @@ To install using pip run:
 This module can be used to web scraping - Extract HTML content.
 
 ``` Python
-import scraping-link
+from scraping_link import ScrapingLinkRequest
+
+url = "https://parascrapear.com/"
+apikey = "YOUR_API"
+
+r = ScrapingLinkRequest.scrape(url, apikey)
+print(r.text)
+
 
 ```
 
